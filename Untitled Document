@@ -1,0 +1,18 @@
+#Common commands
+
+#To get all pods
+kubectl get pods 
+
+
+kubectl get cs
+kubectl cluster-info
+kubectl get nodes
+kubectl proxy
+open http://localhost:8001/ui/
+
+
+kubectl create -f app.yml -f app-service.yml
+kubectl get pods
+kubectl get svc
+
+kubectl scale --replicas=5 rc/hellorep
