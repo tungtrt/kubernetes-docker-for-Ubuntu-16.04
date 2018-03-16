@@ -1,0 +1,26 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hello-target
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: hello-target
+    spec:
+      containers:
+      - name: hello-target
+        image: alishagupta/hello:firttry
+        ports:
+        - name: http-port
+          containerPort: 80
+        env:
+        - name: ENABLE_CUSTOM_METRICS
+          value: "true"
+         resources:
+          requests:
+            cpu: 200m
+         
+          
+          
