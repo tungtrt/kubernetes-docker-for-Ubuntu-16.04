@@ -22,7 +22,19 @@ ssh root@MasterNodeIPAddress
 ```
 * Type yes 
 * Follow commands  ![master.sh](https://github.com/alishaagupta/kubernetes-docker/blob/master/master.sh)
+* Pull the docker image from the private registry 
 
+
+### Configuring the slave nodes using digital ocean
+1. Create a new droplet in digitalocean.
+2. Choose the distribution.
+3. Choose the droplet size.
+4. Choose the nearest Datacenter Region.
+5. Select additional options: Private Networking , Monitoring and User data 
+6. In User data add the yaml file ![node.sh](https://github.com/alishaagupta/kubernetes-docker/blob/master/node.sh)
+7. Add the SSH key
+8. Set the count of slave droplets and name
+9. Click on Create
 
 
 
