@@ -21,4 +21,4 @@ apt-get install -y kubelet kubeadm kubectl kubernetes-cni
 
 #kubeadm join --token tokenGivenbyMaster --discovery-token-unsafe-skip-ca-verification 159.89.169.97:6443
 
-kubeadm join --token 45ccfa.d687fb57c8287643 --discovery-token-unsafe-skip-ca-verification 159.89.169.97:6443
+kubeadm join --token tokenGivenbyMaster --discovery-token-unsafe-skip-ca-verification 159.89.169.97:6443
