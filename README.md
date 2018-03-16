@@ -1,5 +1,5 @@
 # kubernetes-docker
 
-##GETTING STARTED
+## GETTING STARTED
 
 * Create a new droplet in digitalocean
