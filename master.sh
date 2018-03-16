@@ -2,7 +2,8 @@
 
 #Store IP address of master droplet in MASTER_IP
 
-export MASTER_IP=159.89.161.200   
+```
+export MASTER_IP=xxx.x.x.x  
 apt-get update && apt-get upgrade -y
 
 
@@ -14,13 +15,16 @@ deb http://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 
 apt-get update -y
-
+```
 #Install docker ,kubelet , kubeadm , kubectl , kubernetes-cni
+```
 apt-get install -y docker.io
 apt-get install -y kubelet kubeadm kubectl kubernetes-cni
-
+```
 ##kubernetes master deployed 
+```
 kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address $MASTER_IP   
+```
 
 #Configure flannel
 curl -sSL "https://github.com/coreos/flannel/blob/master/Documentation/kube-flannel.yml?raw=true" | kubectl --namespace=kube-system create -f -
