@@ -53,6 +53,15 @@ kubectl create -f appPod.yml
  ``` kubectl create -f Deployment.yml
  ```
  
+ ### To make use of Horizontal Pod Autoscaling
+ 1. Use Heapster yaml file ![Heapster.yml](https://github.com/alishaagupta/kubernetes-docker/blob/master/Heapster.yml)
+ ```
+ kubectl create -f Heapster.yml
+ ```
+* Create HPA file ![HorizontalPodAutoscaler](https://github.com/alishaagupta/kubernetes-docker/blob/master/HorizontalPodAutoscaler.yml)
+```
+kubectl create -f HorizontalPodAutoscaler.yml
+```
  
  
  
