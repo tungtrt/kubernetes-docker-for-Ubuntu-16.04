@@ -70,7 +70,9 @@ kubectl get pods
 ```
 4. To check hpa
 
-``` kubectl get hpa
+``` 
+kubectl get hpa
+
 ```
 
 5. To increase the load use busybox
