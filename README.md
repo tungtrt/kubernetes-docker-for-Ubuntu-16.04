@@ -58,10 +58,31 @@ kubectl create -f appPod.yml
  ```
  kubectl create -f Heapster.yml
  ```
-* Create HPA file ![HorizontalPodAutoscaler](https://github.com/alishaagupta/kubernetes-docker/blob/master/HorizontalPodAutoscaler.yml)
+2 Create HPA file ![HorizontalPodAutoscaler](https://github.com/alishaagupta/kubernetes-docker/blob/master/HorizontalPodAutoscaler.yml)
 ```
 kubectl create -f HorizontalPodAutoscaler.yml
 ```
+
+3. To check pods
+
+```
+kubectl get pods
+```
+4. To check hpa
+
+``` kubectl get hpa
+```
+
+5. To increase the load use busybox
+
+```
+   kubectl run -i --tty load-generator --image=busybox /bin/sh
+   
+   while true; do wget -q -O- IPAddress:PortANumber; done
+   
+```
+
+
  
  
  
