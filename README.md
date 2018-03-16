@@ -21,7 +21,7 @@
 ssh root@MasterNodeIPAddress 
 ```
 * Type yes 
-* Use commands in ![master.sh]
+* Follow commands  ![master.sh](https://github.com/alishaagupta/kubernetes-docker/blob/master/master.sh)
 
 
 
