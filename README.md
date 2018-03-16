@@ -36,5 +36,9 @@ ssh root@MasterNodeIPAddress
 8. Set the count of slave droplets and name
 9. Click on Create
 
+### Creating Pod 
+* Follow the commands in master node ![appPod.yml](https://github.com/alishaagupta/kubernetes-docker/blob/master/appPod.yml)
+
+### Create Service 
 
 
