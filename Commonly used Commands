@@ -1,0 +1,36 @@
+#Common commands
+
+#To get information about pods:
+```
+kubectl get pods 
+```
+```
+kubectl describe pod POD_NAME
+```
+
+# To get cluster info
+```
+kubectl cluster-info
+```
+# To get information about nodes:
+```
+kubectl get nodes
+```
+
+# To create a file 
+```
+kubectl create -f app.yml 
+```
+
+# To get services:
+```
+kubectl get svc  
+```
+
+# To get the information about horizontal pod autoscaler
+```
+kubectl get hpa
+```
+```
+kubectl describe hpa hpa_name
+```
