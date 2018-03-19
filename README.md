@@ -1,4 +1,4 @@
-# kubernetes-docker
+# kubernetes-docker for Ubuntu 16.04
 
 ## GETTING STARTED
 
