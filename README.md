@@ -3,7 +3,7 @@
 ## GETTING STARTED
 
 ### Configuring the Master node 
-1. Configure a machine as Master node.
+1. Configure the machine as Master node.
 2. Follow the commands  ![master.sh](https://github.com/alishaagupta/kubernetes-docker/blob/master/master.sh)
 3. Pull the docker image from the private registry 
 
