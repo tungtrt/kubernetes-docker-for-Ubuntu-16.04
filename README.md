@@ -19,8 +19,8 @@ ssh root@MasterNodeIPAddress
 
 
 ### Configuring the Slave nodes :
-1. Create a new droplet in digitalocean.
-2. Choose the distribution.
+1. Create a new droplet.
+2. Choose the distribution (ubuntu, centOS,etc)
 3. Choose the droplet size.
 4. Choose the nearest Datacenter Region.
 5. Select additional options: Private Networking , Monitoring and User data 
