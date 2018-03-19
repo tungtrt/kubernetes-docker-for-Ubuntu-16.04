@@ -21,13 +21,17 @@ kubectl create -f appPod.yml
 
 ### Create Service File
 * Follow the following commands in master node ![appService.yml](https://github.com/alishaagupta/kubernetes-docker/blob/master/appService.yml)
-```kubectl create -f appService.yml
+
+```
+kubectl create -f appService.yml
 ```
 
  ### Create Deployment File 
  * Follow the following commands in master node ![Deployment.yml](https://github.com/alishaagupta/kubernetes-docker/blob/master/Deployment.yml)
  
- ``` kubectl create -f Deployment.yml
+ 
+ ```
+ kubectl create -f Deployment.yml
  ```
  
  ### To make use of Horizontal Pod Autoscaling
