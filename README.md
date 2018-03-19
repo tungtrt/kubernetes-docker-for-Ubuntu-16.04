@@ -2,7 +2,7 @@
 
 ## GETTING STARTED
 
-### Configuring the master node using digitalocean
+### Configuring the Master node 
 1. Create a new droplet.
 
 
@@ -18,7 +18,7 @@ ssh root@MasterNodeIPAddress
 * Pull the docker image from the private registry 
 
 
-### Configuring the slave nodes using digital ocean
+### Configuring the Slave nodes :
 1. Create a new droplet in digitalocean.
 2. Choose the distribution.
 3. Choose the droplet size.
