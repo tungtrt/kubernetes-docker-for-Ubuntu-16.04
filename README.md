@@ -10,24 +10,24 @@
 
 ### Configuring the Slave nodes :
 1. Configure a machine as Slave node
-2. Follow the commands ![node.sh](https://github.com/vevsatechnologies/kubernetes-docker/blob/master/node.sh)
+2. Follow the commands [node.sh](https://github.com/vevsatechnologies/kubernetes-docker/blob/master/node.sh)
 
 
 ### Creating Pod File
-* Follow the following commands in master node ![appPod.yml](https://github.com/vevsatechnologies/kubernetes-docker/blob/master/appPod.yml)
+* Follow the following commands in master node [appPod.yml](https://github.com/vevsatechnologies/kubernetes-docker/blob/master/appPod.yml)
 ```
 kubectl create -f appPod.yml
 ```
 
 ### Create Service File
-* Follow the following commands in master node ![appService.yml](https://github.com/alishaagupta/kubernetes-docker/blob/master/appService.yml)
+* Follow the following commands in master node [appService.yml](https://github.com/alishaagupta/kubernetes-docker/blob/master/appService.yml)
 
 ```
 kubectl create -f appService.yml
 ```
 
  ### Create Deployment File 
- * Follow the following commands in master node ![Deployment.yml](https://github.com/vevsatechnologies/kubernetes-docker/blob/master/Deployment.yml)
+ * Follow the following commands in master node [Deployment.yml](https://github.com/vevsatechnologies/kubernetes-docker/blob/master/Deployment.yml)
  
  
  ```
@@ -35,11 +35,11 @@ kubectl create -f appService.yml
  ```
  
  ### To make use of Horizontal Pod Autoscaling
- 1. Use Heapster yaml file ![Heapster.yml](https://github.com/vevsatechnologies/kubernetes-docker/blob/master/Heapster.yml)
+ 1. Use Heapster yaml file [Heapster.yml](https://github.com/vevsatechnologies/kubernetes-docker/blob/master/Heapster.yml)
  ```
  kubectl create -f Heapster.yml
  ```
-2 Create HPA file ![HorizontalPodAutoscaler](https://github.com/vevsatechnologies/kubernetes-docker/blob/master/HorizontalPodAutoscaler.yml)
+2 Create HPA file [HorizontalPodAutoscaler](https://github.com/vevsatechnologies/kubernetes-docker/blob/master/HorizontalPodAutoscaler.yml)
 ```
 kubectl create -f HorizontalPodAutoscaler.yml
 ```
