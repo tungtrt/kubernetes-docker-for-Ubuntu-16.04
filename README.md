@@ -3,31 +3,15 @@
 ## GETTING STARTED
 
 ### Configuring the Master node 
-1. Create a new droplet.
-
-
-<!-- You will get the IP address for Master droplet in the DROPLETS section -->
-
-
-* Open the terminal
-```
-ssh root@MasterNodeIPAddress 
-```
-* Type yes 
-* Follow commands  ![master.sh](https://github.com/alishaagupta/kubernetes-docker/blob/master/master.sh)
-* Pull the docker image from the private registry 
+1. Configure a machine as Master node.
+2. Follow the commands  ![master.sh](https://github.com/alishaagupta/kubernetes-docker/blob/master/master.sh)
+3. Pull the docker image from the private registry 
 
 
 ### Configuring the Slave nodes :
-1. Create a new droplet.
-2. Choose the distribution (ubuntu, centOS,etc)
-3. Choose the droplet size.
-4. Choose the nearest Datacenter Region.
-5. Select additional options: Private Networking , Monitoring and User data 
-6. In User data add the yaml file ![node.sh](https://github.com/alishaagupta/kubernetes-docker/blob/master/node.sh)
-7. Add the SSH key
-8. Set the count of slave droplets and name
-9. Click on Create
+1. Configure a machine as Slave node
+2. Follow the commands ![node.sh](https://github.com/alishaagupta/kubernetes-docker/blob/master/node.sh)
+
 
 ### Creating Pod File
 * Follow the following commands in master node ![appPod.yml](https://github.com/alishaagupta/kubernetes-docker/blob/master/appPod.yml)
