@@ -6,7 +6,7 @@
 1. Create a new droplet.
 
 
-/* You will get the IP address for Master droplet in the DROPLETS section */
+<!-- You will get the IP address for Master droplet in the DROPLETS section -->
 
 
 * Open the terminal
