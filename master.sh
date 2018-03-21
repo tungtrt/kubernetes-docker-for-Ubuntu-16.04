@@ -41,7 +41,11 @@ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/
 
 #After this, we need to pull our docker image from the repository
 #The image will be used in yaml files 
-
+```
+sudo cp /etc/kubernetes/admin.conf $HOME/
+sudo chown $(id -u):$(id -g) $HOME/admin.conf
+export KUBECONFIG=$HOME/admin.conf
+```
 
 
 
