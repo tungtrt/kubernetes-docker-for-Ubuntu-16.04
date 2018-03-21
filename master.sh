@@ -26,6 +26,13 @@ apt-get install -y kubelet kubeadm kubectl kubernetes-cni
 kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address $MASTER_IP   
 ```
 
+
+```
+sudo cp /etc/kubernetes/admin.conf $HOME/
+sudo chown $(id -u):$(id -g) $HOME/admin.conf
+export KUBECONFIG=$HOME/admin.conf
+```
+
 #Configure flannel
 curl -sSL "https://github.com/coreos/flannel/blob/master/Documentation/kube-flannel.yml?raw=true" | kubectl --namespace=kube-system create -f -
 
@@ -41,11 +48,7 @@ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/
 
 #After this, we need to pull our docker image from the repository
 #The image will be used in yaml files 
-```
-sudo cp /etc/kubernetes/admin.conf $HOME/
-sudo chown $(id -u):$(id -g) $HOME/admin.conf
-export KUBECONFIG=$HOME/admin.conf
-```
+
 
 
 
